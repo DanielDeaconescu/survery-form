@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Travel Survey Form</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 id="title">Travel Survey Form</h1>
+    <p id="description">This survey aims to gather information regarding your travel preferences.</p>
+    <form id="survey-form" action="#">
+        <fieldset class="fieldset-1">
+            <label id="name-label" for="name">
+                Your name: <input class="general-style" id="name" type="text"
+                    placeholder="Please enter your first and last name" required>
+            </label>
+            <label id="email-label" for="email">
+                Your email: <input class="general-style" id="email" type="email"
+                    placeholder="Please enter your email address correctly" required>
+            </label>
+            <label id="number-label" for="number">
+                Your age: <input class="general-style" id="number" type="number" min="13" max="120"
+                    placeholder="Age should be between 13 and 120">
+            </label>
+        </fieldset>
+        <fieldset class="fieldset-2">
+            <label for="dropdown">
+                How do you like to travel?
+                <select class="general-style" name="" id="dropdown">
+                    <option value="">(choose one)</option>
+                    <option value="1">Alone</option>
+                    <option value="2">With a partner</option>
+                    <option value="3">In a group</option>
+                </select>
+            </label>
+        </fieldset>
+        <fieldset class="fieldset-3">
+            <legend>Do you prefer the mountainside or the seaside?</legend>
+            <label for="mountain">
+                <input class="inline" type="radio" name="travel-type" value="mountain">Mountain enthusiast
+            </label>
+            <label for="seaside">
+                <input class="inline" type="radio" name="travel-type" value="seaside">Beach lover
+            </label>
+        </fieldset>
+        <fieldset class="fieldset-4">
+            <legend>What are some essential backpack things for you?</legend>
+            <label for="water">
+                <input class="inline" type="checkbox" id="water" value="water"> Water
+            </label>
+            <label for="snacks">
+                <input class="inline" type="checkbox" id="snacks" value="snacks"> Snacks
+            </label>
+            <label for="flashlight">
+                <input class="inline" type="checkbox" id="flashlight" value="flashlight"> Flashlight
+            </label>
+            <label for="backup-shoes">
+                <input class="inline" type="checkbox" id="backup-shoes" value="backup-shoes"> Backup shoes
+            </label>
+        </fieldset>
+        <fieldset class="fieldset-5">
+            <label for="textarea-comments">
+                Please provide further information regarding your travel preferences.
+                <textarea class="block" name="textarea-comments" id="textarea-comments" cols="30" rows="4"
+                    placeholder="E.g. I like to travel during spring"></textarea>
+            </label>
+        </fieldset>
+        <input id="submit" type="submit" value="Submit">
+    </form>
+
+</body>
+
+</html>
